@@ -1,0 +1,507 @@
+html {
+	font-size: 16px;
+	font-family: 'Source Sans Pro', helvetica;
+}
+body {
+	width: 100%;
+}
+header {
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+  z-index: 999;
+  border-bottom: 1px solid #c9c9c9;
+	/*height: 10em;*/
+}
+#page {
+  position: relative;
+}
+main {
+	/*height: 30em;*/
+  width: 100%;
+	background-color: #efefef;
+  /*position: relative;*/
+}
+section {
+	position: relative;
+}
+nav {
+	height: 100%;
+}
+ul {
+	display: inline-block;
+}
+li {
+	/*display: inline-block;*/
+	font-weight: 400;
+}
+p {
+	font: 100 normal normal 1.2em 'Source Sans Pro';
+	/*font-weight: lighter !important;*/
+	color: #555;
+}
+#logo {
+	/*width: 15em;*/
+	display: inline-block;
+	text-align: center;
+	padding: 0.5em 0;
+}
+h1 {
+/*	font-family: Open Sans;
+	font-size: 3em;
+	font-weight: 700;
+	font-stretch: condensed;*/
+	font: bold normal extra-condensed 2em/1 coda;
+	font-family: coda;
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 1em;
+	color: #80a7d4;
+}
+h2 {
+/*	font-family: Source Sans Pro;
+	font-size: 1em;
+	font-weight: 100;
+	font-stretch: extra-condensed;*/
+	font: 100 normal extra-condensed 0.875em/1 'Source Sans Pro';
+	transform:scale(0.75,1);
+	color: #848484;
+}
+h3 {
+	color: #fff;
+	font: 'Source Sans Pro', helvetica;
+}
+h4 {
+	font-weight: 200;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	color: #555;
+}
+h5  {
+	font-size: 1.2em;
+	color: #222;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: coda;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p a {
+  color: #80a7d4;
+}
+figure {
+	/*width: 64%;*/
+/*	height: 6em;*/
+	padding: 0 0.125em;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	/*height: 1em;*/
+}
+figure div {
+	width: 100%;
+	height: 12em;
+/*	background-size: cover;
+*/	border: 1px solid #484848;
+}
+.left div {
+	background: url('utility/posm.png');
+	background-size: cover;
+}
+.middle div {
+	background: url('utility/urib.png');
+	background-size: cover;
+}
+.right div {
+	background: url('utility/sncp.png');
+	background-size: cover;
+}
+figcaption {
+	margin: 0.667em 0 1.5em;
+	height: 3em;
+}
+.gallery {
+	width: 80%;
+}
+
+footer {
+	/*margin-top: 3.375em;*/
+	padding: 1em 4%;
+	/*height: 3.6em;*/
+	background-color: #80a7d4;
+	color: #fff;
+	text-align: center;
+  /*float: right;*/
+}
+
+footer p {
+	color: #222;
+	font-weight: 400;
+	font-size: 0.875em;
+}
+
+li a {
+	color: #848484;
+/*	-webkit-animation: slidein 3s linear 1s;
+     -moz-animation: slidein 3s linear 1s;
+       -o-animation: slidein 3s linear 1s;
+          animation: slidein 3s linear 1s;*/
+}
+
+li a:hover {
+	color: #80a7d4;
+/*	-webkit-animation: slidein 3s linear 1s;
+     -moz-animation: slidein 3s linear 1s;
+       -o-animation: slidein 3s linear 1s;
+          animation: slidein 3s linear 1s;*/
+}
+
+#menu li a:hover {
+  background-color: #80a7d4;
+  color: #fff;
+}
+
+/* --------------------- Header ----------------------- */
+/*#fix {
+  height: 3em;  
+  background-color: #1b1b1b;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}*/
+nav {
+  /*max-width: 60em;*/
+  text-align: left;
+  padding: 0 4%;
+/*  width: 100%;
+  display: inline-block;*/
+}
+/*nav h1 {
+  padding: 0.6em 0 0;
+  float: left;
+  font-size: 1.5em;
+  font-family: 'Oswald', Georgia, Times, "Times New Roman", serif;
+}*/
+/*.nav {
+  font-size: 0.8em;
+  color: #FFCC9F;
+  float: left;
+  padding: 1.325em 2em 0;
+}*/
+/*header a {
+  color: #f5f5f5;
+}
+header a:hover {
+  color: #f5f5f5;
+}*/
+#menu-button {
+  float: right;
+  /*margin-top: 0.84em;*/
+  cursor: pointer;
+/*  position: fixed;*/
+  padding: 1em;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+#menu-button:hover {
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#menu-button span {
+  display: block;
+  margin-top: 0.3em;
+  height: 0.12em;
+  background-color: #80a7d4;
+  width: 1.5em;
+}
+#menu {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 3.875em;
+  width: 100%;
+  margin-left: -4%;
+  text-align: center;
+  padding: 0.5em 0;
+}
+#menu li {
+  padding: 0.2em 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-family: 'Source Sans Pro';
+}
+#menu a {
+  /*color: #848484;*/
+  display: block;
+}
+
+/* --------------------- Main ----------------------- */
+main {
+  padding: 3.875em 0;
+  display: inline-block;
+  /*max-width: 60em;*/
+  text-align: center;
+}
+h3 {
+	line-height: 1.2em;
+	font-size: 2.25em;
+	padding: 2em 4%;
+	font-weight: 800;
+	/*font-family: */
+
+}
+#welcome p {
+	padding: 1.5em 4% 0;
+}
+#welcome b {
+	font-weight: 400;
+	color: #fc9307;
+}
+#welcome {
+	background-color: #fff;
+	padding-bottom: 2em;
+}
+#welcome div {
+	background: url('utility/cover2.jpg');
+	background-size: cover;
+
+}
+#welcome h3 {
+	background-color: rgba(48,48,48,0.7);
+
+}
+
+#research {
+	background-color: #fff;
+}
+
+#research div {
+	/*margin: 1em;*/
+}
+
+.more a {
+	color: #80a7d4;
+	padding: 0.667em 1.5em;
+	border: 1px solid #80a7d4;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.more a:hover {
+	color: #fff;
+	background-color: #80a7d4;
+}
+
+
+/*.content {
+  padding-bottom: 2em;
+  float: left; 
+  min-width: 16em;
+  width: 100%;
+}
+.about {
+  padding-bottom: 1em;
+}*/
+/*h2 {
+  font-size: 1.75em;
+  line-height: 2.25em;;
+  color: #295F6C;
+  font-family: 'Oswald', Georgia, Times, "Times New Roman", serif;
+}*/
+/*.about p {
+  padding-bottom: 1em;
+  font-size: 1em; 
+}
+.about ul {
+  font-size: 1em;
+}*/
+/*h3 {
+  font-size: 1.5em;
+  color: #848484;
+  margin-right: 1em;
+  line-height: 2.25em;
+  font-family: 'Oswald', Georgia, Times, "Times New Roman", serif;
+}*/
+/*.tweets-stream ul {
+  list-style: disc;
+  margin-right: 1.6em;
+}
+.tweets-stream li {
+  line-height: 1.5em;
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 0.667em;
+}*/
+
+
+/* --------------------- Research ----------------------- */
+#research {
+  background-color: #efefef; 
+}
+
+#research h4 {
+  margin: 1em 4%;
+}
+#research p {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 4% 1em;
+}
+
+p a {
+  color: #80a7d4;
+}
+
+h6 {
+  padding: 0 0.667em;
+  font-size: 1.5em;
+  color: #80A7D4;
+}
+
+.description {
+  padding-bottom: 2em;
+}
+
+.one div {
+  background: url('utility/posm.png');
+  background-size: cover;
+}
+.two div {
+  background: url('utility/urib.png');
+  background-size: cover;
+}
+.three div {
+  background: url('utility/sncp.png');
+  background-size: cover;
+}
+
+
+/* --------------------- People, Courses, Join ----------------------- */
+.people, .courses, .join {
+  text-align: left;
+  padding: 0 4%;
+  max-width: 60em;
+}
+.inline {
+  margin: 0 3em;
+  list-style: disc;
+}
+.inline li a {
+  color: #80a7d4;
+}
+
+
+/* --------------------- Media Query ----------------------- */
+
+@media screen and (min-width: 40em) {
+  #menu {
+    display: inline-block;
+    top: 0;
+    width: auto;
+    float: right;
+    position: inherit;
+  }
+
+  h3 {
+    font-size: 3.375em;
+  }
+
+  #menu li {
+  	display: inline-block;
+  	font-size: 1em;
+  	/*padding: 0.6em 0.4em;*/
+  }
+
+  #menu li a {
+  	width: 100%;
+  	height:100%;
+    padding: 0.6em 0.4em;
+  }
+
+  figure {
+    margin: 1em auto;
+  }
+
+  figure div {
+  	height: 24em;
+  }
+
+
+  #menu-button {
+    display: none;
+  }
+
+  #welcome p {
+  	padding: 1.5em 12% 0;
+  }
+
+  h4 {
+  	font-size: 3.375em;
+  }
+
+}
+
+@media screen and (min-width: 62.8em) {
+  nav, footer ul {
+ /*   width: 100%;
+    display: inline-block;*/
+  }
+  figure img {
+    /*width: 10.679em !important;*/
+  }
+
+  #welcome {
+  	padding-bottom: 3.375em;
+  }
+
+  #welcome p {
+    padding: 2.25em 20% 0;
+  }
+
+  h3 {
+  	padding: 3.375em 4%;
+  }
+
+  .gallery {
+  	width: 92%;
+  }
+
+  .gallery li {
+  	display: inline-block;
+  	width: 25%;
+  	padding: 0 1em;
+  }
+
+  li.research {
+    width:100%;
+    text-align: left;
+  }
+
+  a.figure {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    max-width: 28em;
+  }
+
+  .research div {
+    display: inline-block;
+    width: 50%;
+    /*float:left;*/
+    /*text-align: left;*/
+    padding: 1.5em;
+  }
+
+  .research figure div {
+    width: 80%;
+  }
+
+
+}
