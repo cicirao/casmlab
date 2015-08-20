@@ -381,6 +381,10 @@ h6 {
   background: url('utility/sncp.png');
   background-size: cover;
 }
+.fan div {
+  background: url('utility/fan.jpeg');
+  background-size: cover;
+}
 
 
 /* --------------------- People, Courses, Join ----------------------- */
